@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../myapp_all"
+		},
+		{
+			"path": "../myapp_back"
+		}
+	],
+	"settings": {}
+}
