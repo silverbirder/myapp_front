@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: echo ${{ github.event.client_payload.github }}
       - name: Make changes to pull request
         run: date +%s > report.txt
       - name: Create Pull Request
