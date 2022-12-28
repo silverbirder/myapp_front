@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./variables.css";
 import { useTranslation } from "react-i18next";
 
 function App() {
