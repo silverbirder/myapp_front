@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: echo ${{ github.event.client_payload.github }}
       - name: Make changes to pull request
-        run: echo ${{ fromJSON(github.event.client_payload.github) }} > src/resource.json
+        run: echo "${{ fromJSON(github.event.client_payload.github) }}" > src/resource.json
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
