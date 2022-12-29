@@ -705,7 +705,6 @@
   "typography": {
     "H1": {
       "Bold": {
-        "type": "typography",
         "value": {
           "fontFamily": "Inter",
           "fontWeight": "Bold",
@@ -713,10 +712,10 @@
           "fontSize": 48.829,
           "paragraphSpacing": 32,
           "letterSpacing": "-5%"
-        }
+        },
+        "type": "typography"
       },
       "Regular": {
-        "type": "typography",
         "value": {
           "fontFamily": "Inter",
           "fontWeight": "Regular",
@@ -724,12 +723,12 @@
           "fontSize": 48.829,
           "paragraphSpacing": 32,
           "letterSpacing": "-5%"
-        }
+        },
+        "type": "typography"
       }
     },
     "H2": {
       "Bold": {
-        "type": "typography",
         "value": {
           "fontFamily": "Inter",
           "fontWeight": "Bold",
@@ -737,10 +736,10 @@
           "fontSize": 39.063,
           "paragraphSpacing": 26,
           "letterSpacing": "-5%"
-        }
+        },
+        "type": "typography"
       },
       "Regular": {
-        "type": "typography",
         "value": {
           "fontFamily": "Inter",
           "fontWeight": "Regular",
@@ -748,22 +747,23 @@
           "fontSize": 39.063,
           "paragraphSpacing": 26,
           "letterSpacing": "-5%"
-        }
+        },
+        "type": "typography"
       }
     },
     "Body": {
-      "type": "typography",
       "value": {
         "fontFamily": "Roboto",
         "fontWeight": "Regular",
         "lineHeight": "110%",
         "fontSize": 16,
         "paragraphSpacing": 26
-      }
+      },
+      "type": "typography"
     }
   },
   "masa": {
-    "value": "#a01316",
+    "value": "#3a3534",
     "type": "color"
   },
   "tokenSetOrder": {
