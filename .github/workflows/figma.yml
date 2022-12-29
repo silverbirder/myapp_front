@@ -14,3 +14,4 @@ jobs:
           add: "src/output.json src/variables.css"
           author_name: Github Actions Bot
           author_email: github-actions[bot]@users.noreply.github.com
+          push: false
