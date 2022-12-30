@@ -1,5 +1,5 @@
 overwrite: true
-schema: "../fauna-nextjs-guestbook/schema.gql"
+schema: "./src/schema.gql"
 documents: "src/**/*.graphql"
 generates:
   src/gql/:
