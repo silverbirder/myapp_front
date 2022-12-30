@@ -9,7 +9,7 @@ jobs:
       # - uses: actions/setup-node@v3
       # - run: npm ci
       - name: Make changes to pull request
-        run: echo '${{ github.event.client_payload.github }}' > src/schema.gql
+        run: echo "${{ github.event.client_payload.github }}" > src/schema.gql
       # - run: npm run codegen
       - name: Create Pull Request
         id: cpr
