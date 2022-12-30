@@ -1,0 +1,10 @@
+on:
+  repository_dispatch:
+    types: [create-pull-request-schema]
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Make changes to pull request
+        run: echo '${{ github.event.client_payload.github }}'
