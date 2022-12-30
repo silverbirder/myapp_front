@@ -7,7 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          echo "${{ github.event.client_payload }}"
+          echo "${{ github.event.client_payload.ref }}"
+          echo "${{ github.event.client_payload.sha }}"
       # - uses: actions/setup-node@v3
       # - run: npm ci
       # - name: Make changes to pull request
