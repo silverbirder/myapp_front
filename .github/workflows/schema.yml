@@ -13,10 +13,10 @@ jobs:
         with:
           repository: "silverbirder/fauna-nextjs-guestbook"
           ref: ${{ github.event.client_payload.ref }}
-          path: "src/"
+          path: "tmp/"
       - run: |
-          mv src/fauna-nextjs-guestbook/schema.gql src/schema.gql
-          rm -rf src/fauna-nextjs-guestbook
+          mv tmp/schema.gql src/schema.gql
+          rm -rf tmp
       - uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run codegen
