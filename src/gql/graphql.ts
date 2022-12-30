@@ -16,6 +16,7 @@ export type Scalars = {
 
 export type GuestbookEntry = {
   __typename?: 'GuestbookEntry';
+  createdAt: Scalars['String'];
   message: Scalars['String'];
   name: Scalars['String'];
 };
