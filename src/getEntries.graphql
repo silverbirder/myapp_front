@@ -1,0 +1,6 @@
+query getEntries {
+  entries {
+    name
+    message
+  }
+}

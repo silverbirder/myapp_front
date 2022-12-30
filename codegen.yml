@@ -1,0 +1,7 @@
+overwrite: true
+schema: "../fauna-nextjs-guestbook/schema.gql"
+documents: "src/**/*.graphql"
+generates:
+  src/gql/:
+    preset: "client"
+    plugins: []

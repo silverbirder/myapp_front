@@ -20,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate:style": "token-transformer src/tokens.json src/output.json && style-dictionary build"
+    "generate:style": "token-transformer src/tokens.json src/output.json && style-dictionary build",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": [
@@ -41,7 +42,10 @@
     ]
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.16.2",
+    "@graphql-codegen/client-preset": "1.2.4",
     "style-dictionary": "^3.7.1",
-    "token-transformer": "^0.0.28"
+    "token-transformer": "^0.0.28",
+    "typescript": "^4.9.4"
   }
 }
