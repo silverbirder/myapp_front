@@ -6,16 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-      - run: npm ci
+      # - uses: actions/setup-node@v3
+      # - run: npm ci
       - name: Make changes to pull request
         run: echo '${{ github.event.client_payload.github }}' > src/schema.gql
-      - run: npm run codegen
+      # - run: npm run codegen
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: create-pull-request/patch2
+          # branch: create-pull-request/patch2
           commit-message: Update report
           author: Github Actions Bot <github-actions[bot]@users.noreply.github.com>
           title: "Update schema"
