@@ -15,7 +15,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v4
         with:
-          # branch: create-pull-request/schema
+          branch: create-pull-request/schema
           commit-message: Update report
           author: Github Actions Bot <github-actions[bot]@users.noreply.github.com>
           title: "Update schema"
