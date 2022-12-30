@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../myapp_back"
+		},
+		{
+			"path": "../fauna-nextjs-guestbook"
 		}
 	],
 	"settings": {}
