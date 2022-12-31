@@ -1,3 +1,6 @@
 module.exports = {
-  default: "--publish-quiet",
+  default: {
+    publishQuiet: true,
+    format: ["html:cucumber-report.html"],
+  },
 };
