@@ -7,5 +7,5 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm ci
       - name: Install playwright browsers
-        run: npx playwright install-deps chromium --with-deps
+        run: npx playwright install-deps chromium
       - run: npm run e2e
