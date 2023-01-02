@@ -33,5 +33,4 @@ jobs:
 
             [1]: https://github.com/peter-evans/create-pull-request
   trigger-test:
-    if: success()
-    uses: silverbirder/myapp_front/.github/workflows/test.yml@main
+    uses: silverbirder/myapp_front/.github/workflows/test.yml@create-pull-request/schema
