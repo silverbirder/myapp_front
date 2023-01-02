@@ -1,9 +1,10 @@
 name: test
-# on:
-#   pull_request_target:
-#     types: [opened, synchronize, reopened]
 on:
-  workflow_call:
+  workflow_run:
+    workflows:
+      - features
+    types:
+      - completed
 jobs:
   test:
     runs-on: ubuntu-latest
