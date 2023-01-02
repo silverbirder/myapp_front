@@ -1,6 +1,9 @@
 name: test
 on:
-  push:
+  workflow_run:
+    workflows: [features]
+    types: [completed]
+    branches: [create-pull-request/schema]
 jobs:
   test:
     runs-on: ubuntu-latest
