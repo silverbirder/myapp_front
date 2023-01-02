@@ -1,9 +1,8 @@
 name: test
 on:
-  workflow_run:
-    workflows: [features]
-    types: [completed]
-    branches: [create-pull-request/schema]
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
 jobs:
   test:
     runs-on: ubuntu-latest
