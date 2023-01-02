@@ -1,3 +1,4 @@
+name: features
 on:
   repository_dispatch:
     types: [create-pull-request-features]
