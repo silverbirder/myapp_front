@@ -1,10 +1,6 @@
 name: test
 on:
-  workflow_run:
-    workflows:
-      - features
-    types:
-      - completed
+  push:
 jobs:
   test:
     runs-on: ubuntu-latest
