@@ -13,3 +13,8 @@ not the [Bee Gees song](https://www.youtube.com/watch?v=I_izvAbhExY).
 
 - When the greeter says hello
 - Then I should have heard "hello"
+
+### Scenario Outline: Say foo
+
+- When the greeter says foo foo
+- Then I should have heard "foo"
